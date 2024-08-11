@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Analyst</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('mMr142.png') no-repeat center center/cover;
+            color: #fff; /* White text */
+            height: 100vh; /* Full height of viewport */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Hide overflow to avoid scrollbars */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black for header */
+            padding: 20px 0;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #00bcd4; /* Cyan text for the logo */
+            font-size: 28px; /* Larger font size */
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 5px;
+        }
+
+        nav ul li a {
+            color: #fff; /* White text for navigation links */
+            text-decoration: none;
+            font-size: 18px; /* Slightly larger font size */
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #00bcd4; /* Cyan underline */
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4; /* Cyan text on hover */
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+
+        .hero {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .hero:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Increase shadow on hover */
+        }
+
+        .hero h1 {
+            font-size: 50px; /* Slightly larger font size */
+            margin-bottom: 20px; /* Add some margin to separate from the subheading */
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        .hero h1 span {
+            color: #00bcd4; /* Cyan text for highlighted part */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for effect */
+        }
+
+        .hero .subheading {
+            margin-bottom: 20px; /* Space below the subheading */
+            opacity: 0;
+            animation: fadeInUp 1.5s 0.5s ease-out forwards;
+            font-size: 24px; /* Adjust font size for readability */
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #00bcd4; /* Cyan button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 10px; /* Space above the button */
+            font-size: 18px; /* Larger font size for button */
+            animation: bounceIn 1s ease-out;
+        }
+
+        .btn:hover {
+            background-color: #0097a7; /* Darker cyan on hover */
+            transform: scale(1.1); /* Slightly enlarge on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">SEFTIFY</h1>
+            <nav>
+                <ul>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>We Provide Best <span>CYBERSECURITY AND DIGITAL FORENSICS SOLUTIONS</span></h1>
+            <a href="cyber security and digital forensics analyst (1).pdf" class="btn">Download Resume</a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Cybersecurity Analyst</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('AdobeStock_426570472.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: background-color 0.3s ease, top 0.3s ease;
+        }
+
+        .hidden {
+            top: -100px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #00bcd4;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 5px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #00bcd4;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+            transform: scale(1.1);
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+
+        .services {
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 100px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .services h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff;
+            animation: bounce 1.5s infinite;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .services .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .services .service {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 280px;
+            text-align: center;
+            position: relative;
+        }
+
+        .services .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .services .service h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .services .service p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Additional styling for animations and gradients */
+        .services .service::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 188, 212, 0.2));
+            z-index: -1;
+            filter: blur(15px);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 15px;
+        }
+
+        .services .service:hover::before {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <h1 class="logo">SEFTIFY</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="services" id="services">
+        <h1>My Services</h1>
+        <div class="service-container">
+            <div class="service">
+                <h3>Network Security</h3>
+                <p>Providing comprehensive network security solutions to protect your infrastructure from cyber threats.</p>
+            </div>
+            <div class="service">
+                <h3>Secure Software Design</h3>
+                <p>Designing and developing secure software applications tailored to your business needs.</p>
+            </div>
+            <div class="service">
+                <h3>Forensics Analysis</h3>
+                <p>Offering detailed forensics analysis and investigation services to recover and analyze digital evidence.</p>
+            </div>
+            <div class="service">
+                <h3>Penetration Testing</h3>
+                <p>Conducting thorough penetration testing to identify and mitigate vulnerabilities in your systems.</p>
+            </div>
+            <div class="service">
+                <h3>Web Application Security</h3>
+                <p>Ensuring the security of your web applications through rigorous testing and assessment.</p>
+            </div>
+            <div class="service">
+                <h3>Cryptography</h3>
+                <p>Implementing advanced cryptographic solutions to secure your communications and data.</p>
+            </div>
+            <div class="service">
+                <h3>Information Security</h3>
+                <p>Providing comprehensive information security services to protect your data from unauthorized access and breaches.</p>
+            </div>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>Creating and managing dynamic web projects tailored to your business needs.</p>
+            </div>
+            <div class="service">
+                <h3>Programming</h3>
+                <p>Offering programming services in Python, JavaScript, PHP, and other languages to build robust applications.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY === 0) {
+                header.classList.remove('hidden');
+            } else {
+                header.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

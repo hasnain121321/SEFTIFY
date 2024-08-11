@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Cybersecurity Analyst</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('AdobeStock_213593664_Preview.jpeg') no-repeat center center/cover; /* Set the full background image */
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center content vertically */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #00bcd4;
+            font-size: 28px;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 5px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #00bcd4;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+            transform: scale(1.1);
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+
+        .resume {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 80px; /* Ensure margin top to prevent overlap with navbar */
+            flex: 1; /* Allow flex to fill the remaining height */
+        }
+
+        .resume-container {
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: row;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .resume .profile {
+            width: 30%; /* Adjust width to fit content */
+            padding: 20px;
+            background: #008cba; /* Blue color contrast */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .resume .profile img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .resume .content {
+            width: 70%; /* Adjust width to fit content */
+            padding: 40px 20px;
+        }
+
+        .resume .content h2 {
+            color: #00bcd4;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .resume .section {
+            margin-bottom: 30px;
+        }
+
+        .resume .section h3 {
+            color: #008cba;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .resume .section p {
+            margin: 0;
+        }
+
+        .resume .education-item {
+            margin-bottom: 20px;
+        }
+
+        .resume .education-item h4 {
+            margin: 0;
+            font-size: 20px;
+            color: #00bcd4;
+        }
+
+        .resume .education-item span {
+            display: block;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">SEFTIFY</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="resume">
+        <div class="resume-container">
+            <div class="profile">
+                <img src="1692039981920.jpeg" alt="Profile Picture">
+            </div>
+            <div class="content">
+                <h2>Resume</h2>
+                <div class="section">
+                    <h3>My Work Experience</h3>
+                    <div class="education-item">
+                        <h4><Internee class="pk"></Internee> Pakistan Cybersecurity Task Force</h4>
+                        <span>(2022-present)</span>
+                    </div>
+                <div class="section">
+                    <h3>My Education</h3>
+                    <div class="education-item">
+                        <h4>BS Cybersecurity and Digital Forensics</h4>
+                        <span>Islamia University of Bahawalpur, Punjab, Pak. (2021 - Present)</span>
+                    </div>
+                    <div class="education-item">
+                        <h4>ICS PRE COMPUTERSCIENCE</h4>
+                        <span>HSSC, Kpk, Pak. (2019 - 2021)</span>
+                    </div>
+                    <div class="education-item">
+                        <h4>Matriculation</h4>
+                        <span>SSC, Kpk, Pak. (2017 - 2019)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
